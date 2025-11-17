@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+transition_type=wave # fade, wipe, grow, outer, random, wave
+
+# Check for directory argument
+if [ -z "$1" ]; then
+    echo "Usage: $0 <directory>"
+    exit 1
+fi
+
+# List image files (case-insensitive) and present with wofi
+choice=$(ls "$1" | fuzzel -p "Choose background: " --dmenu)
+
+# If a file was selected, print its name
+if [ -n "$choice" ]; then
+  pkill fuzzel
+  swww img --transition-type="$transition_type" --transition-fps=60 "$1/$choice"
+fi
+
