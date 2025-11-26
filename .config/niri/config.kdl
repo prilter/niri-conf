@@ -257,6 +257,7 @@ binds {
     Mod+R      hotkey-overlay-title="Open ranger"        { spawn-sh "foot ranger"; }
     Mod+F      hotkey-overlay-title="Open Firefox"       { spawn "firefox"; }
     Mod+N      hotkey-overlay-title="Open Nekoray"       { spawn "nekoray"; } // ?
+    Mod+I      hotkey-overlay-title="Open Perplexity"    { spawn-sh "firefox https://www.perplexity.ai/"; }
     Alt+N      hotkey-overlay-title="Change wallpaper"   { spawn-sh "~/.config/niri/scripts/bg ~/Pictures/wallpapers/"; }
     Alt+C      hotkey-overlay-title="Choose wallpaper"   { spawn-sh "~/.config/niri/scripts/bg_choose ~/Pictures/wallpapers/"; }
     Alt+B      hotkey-overlay-title="Remove wallpaper"   { spawn-sh "swww clear";}
