@@ -76,6 +76,12 @@ input {
     position x=1280 y=0
 }
 
+gestures { /* LEFT TOP SIDE */
+    hot-corners {
+        off
+    }
+}
+
 // Settings that influence how windows are positioned and sized.
 // Find more information on the wiki:
 // https://yalter.github.io/niri/Configuration:-Layout
@@ -248,7 +254,7 @@ binds {
 
     // Suggested binds for running programs: terminal, app launcher, screen locker.
     Mod+Return hotkey-overlay-title="Open a Terminal"    { spawn "foot"; }
-    Mod+E      hotkey-overlay-title="Open ranger"        { spawn-sh "foot ranger"; }
+    Mod+R      hotkey-overlay-title="Open ranger"        { spawn-sh "foot ranger"; }
     Mod+F      hotkey-overlay-title="Open Firefox"       { spawn "firefox"; }
     Mod+N      hotkey-overlay-title="Open Nekoray"       { spawn "nekoray"; } // ?
     Alt+N      hotkey-overlay-title="Change wallpaper"   { spawn-sh "~/.config/niri/scripts/bg ~/Pictures/wallpapers/"; }
@@ -361,8 +367,8 @@ binds {
 
 
     /* FLOATING(bloated function for niri for my take) */
-    Mod+T       { toggle-window-floating; }
-    Mod+Shift+T { switch-focus-between-floating-and-tiling; }
+    Mod+E       { toggle-window-floating; }
+    Mod+Shift+E { switch-focus-between-floating-and-tiling; }
 
     /* FULLSCREEN */
     Mod+U { toggle-column-tabbed-display; } /* VERTICAL */
