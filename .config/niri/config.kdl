@@ -91,7 +91,7 @@ binds {
     Alt+C      hotkey-overlay-title="Choose wallpaper"   { spawn-sh "~/.config/niri/scripts/bg_choose ~/Pictures/wallpapers/"; }
     Alt+B      hotkey-overlay-title="Remove wallpaper"   { spawn-sh "swww clear";}
     Alt+Space  hotkey-overlay-title="Run hotspote"       { spawn "fuzzel"; }
-    Alt+Q      hotkey-overlay-title="Lock the Screen"    { spawn-sh "~/.config/niri/scripts/swaylock"; }
+    Alt+Q      hotkey-overlay-title="Lock the Screen"    { spawn-sh "~/.config/niri/scripts/locks/swaylock"; }
 
     // F-keys
     F1 hotkey-overlay-title="No sound"        allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"; }
