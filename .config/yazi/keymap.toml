@@ -22,9 +22,9 @@ desc = "Delete to beginning"
 
 # CD
 [[mgr.prepend_keymap]]
-on  = [ "g", "c" ]
+on  = [ "c", "p" ]
 run = "cd --interactive"
-desc = "Change directory interactively"
+desc = "Change path interactively"
 
 # ZOOM (requere `imagemagick` package)
 [[mgr.prepend_keymap]]
@@ -54,6 +54,35 @@ desc = "Chmod on selected files"
 on = [ "c", "t" ]
 run = ["plugin telegram-send"]
 desc = "Send with Telegram"
+
+# Smart filter
+[[mgr.prepend_keymap]]
+on   = "F"
+run  = "plugin smart-filter"
+desc = "Smart filter"
+
+# BYPASS
+[[mgr.prepend_keymap]]
+on = [ "w" ]
+run = "plugin bypass"
+desc = "Skipping children with only a single subdirectory"
+[[mgr.prepend_keymap]]
+on = [ "b" ]
+run = "plugin bypass reverse"
+desc = "Skipping parents with only a single subdirectory"
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # RELATIVE MOTIONS
 [[mgr.prepend_keymap]]

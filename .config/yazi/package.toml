@@ -28,5 +28,15 @@ use = "pareix/telegram-send"
 rev = "6f91162"
 hash = "f84d828d2b77607c6b066f8cd85598b7"
 
+[[plugin.deps]]
+use = "yazi-rs/plugins:smart-filter"
+rev = "19dc890"
+hash = "bcda8eeb3f4013bae156aecabfc745e8"
+
+[[plugin.deps]]
+use = "Rolv-Apneseth/bypass"
+rev = "c1e5fcf"
+hash = "208e77480824f62558a5b037c8569d61"
+
 [flavor]
 deps = []
