@@ -1,6 +1,6 @@
 export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="nicoulaj" # arrow bureau cypher fino-time gnzh half-life jnrowe linuxonly nicoulaj kardan
-alias v='vino'
+alias nv='nvim'
 alias rm='rm -rf'
 
 plugins=(

@@ -1,0 +1,23 @@
+# OPEN IMAGES AND VIDEOS WITH IMV AND MPV
+[opener]
+img_view   = [ { run = 'imv "$@"',    orphan = true, for = "unix" } ] # OPEN IMAGES
+video_view = [ { run = 'mpv "$@"',    orphan = true, for = "unix" } ] # OPEN VIDEOS
+
+[open]
+prepend_rules = [
+    { mime = "image/*", use = "img_view"   },
+    { mime = "video/*", use = "video_view" }
+]
+
+# glow.yazi
+[plugin]
+prepend_previewers = [
+  { name = "*.md", run = "glow" },
+]
+
+# DISABLE ANNOYING QUIT MENU(BACKGROUND TASKS)
+[tasks]
+suppress_preload = true
+
+[manager]
+quit_behavior = "quit"

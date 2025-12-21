@@ -83,7 +83,7 @@ binds {
 
     // Suggested binds for running programs: terminal, app launcher, screen locker.
     Mod+Return hotkey-overlay-title="Open a Terminal"    { spawn "foot"; }
-    Mod+R      hotkey-overlay-title="Open ranger"        { spawn-sh "foot ranger"; }
+    Mod+R      hotkey-overlay-title="Open yazi"          { spawn-sh "foot yazi"; }
     Mod+F      hotkey-overlay-title="Open Firefox"       { spawn "firefox"; }
     Mod+N      hotkey-overlay-title="Open Nekoray"       { spawn "nekoray"; } // ?
     Mod+I      hotkey-overlay-title="Open Perplexity"    { spawn-sh "firefox https://www.perplexity.ai/"; }
