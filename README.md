@@ -1,5 +1,5 @@
 # Requirements  
-niri ( + wayland, swww, swaylock )  
+niri ( + wayland, swww, waypaper, swaylock )  
 quickshell
 fuzzel  
 foot  

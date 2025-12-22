@@ -1,3 +1,5 @@
+prefer-no-csd
+
 input {
     keyboard {
         repeat-delay 200
@@ -78,6 +80,16 @@ window-rule { /* OPEN THE FIREFOX PICTURE-IN-PICTURE PLAYER AS FLOATING BY DEFAU
     open-floating true
 }
 
+window-rule { /* OPACITY FOR TERMINAL */
+  match app-id="foot"
+  opacity 0.9
+}
+
+window-rule {
+  match app-id="waypaper"
+  open-floating true
+}
+
 binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 
@@ -88,11 +100,11 @@ binds {
     Mod+N      hotkey-overlay-title="Open Nekoray"       { spawn "nekoray"; } // ?
     Mod+I      hotkey-overlay-title="Open Perplexity"    { spawn-sh "firefox https://www.perplexity.ai/"; }
     Mod+G      hotkey-overlay-title="Open Github"        { spawn-sh "firefox https://www.github.com/"; }
-    Alt+N      hotkey-overlay-title="Change wallpaper"   { spawn-sh "~/.config/niri/scripts/bg ~/Pictures/wallpapers/"; }
-    Alt+C      hotkey-overlay-title="Choose wallpaper"   { spawn-sh "~/.config/niri/scripts/bg_choose ~/Pictures/wallpapers/"; }
+    Alt+N      hotkey-overlay-title="Change wallpaper"   { spawn-sh "waypaper --wallpaper ~/Pictures/wallpapers --random"; }
+    Alt+C      hotkey-overlay-title="Choose wallpaper"   { spawn-sh "GTK_THEME=Adwaita:dark waypaper"; }
     Alt+B      hotkey-overlay-title="Remove wallpaper"   { spawn-sh "swww clear";}
     Alt+Space  hotkey-overlay-title="Run hotspote"       { spawn "fuzzel"; }
-    Alt+Q      hotkey-overlay-title="Lock the Screen"    { spawn-sh "~/.config/niri/scripts/locks/swaylock"; }
+    Alt+Q      hotkey-overlay-title="Lock the Screen"    { spawn-sh "~/.config/niri/scripts/swaylock"; }
 
     // F-keys
     F1 hotkey-overlay-title="No sound"        allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"; }
