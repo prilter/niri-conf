@@ -85,9 +85,14 @@ window-rule { /* OPACITY FOR TERMINAL */
   opacity 0.9
 }
 
-window-rule {
+window-rule { /* WAYPAPER FLOATING MODE */
   match app-id="waypaper"
   open-floating true
+}
+
+window-rule { /* ROUND ANGLES OF WINDOWS */
+    geometry-corner-radius 12
+    clip-to-geometry true
 }
 
 binds {

@@ -4,6 +4,8 @@ ZSH_THEME="nicoulaj" # arrow bureau cypher fino-time gnzh half-life jnrowe linux
 alias nv='nvim'
 alias rm='rm -rf'
 
+export GOPATH="/home/max/.go"
+
 plugins=(
   zsh-autosuggestions
   zsh-syntax-highlighting
