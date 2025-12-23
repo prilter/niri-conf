@@ -72,6 +72,7 @@ layout {
 /* AUTOSTART */
 spawn-at-startup "quickshell"
 spawn-at-startup "swww-daemon"
+spawn-at-startup "batsignal -d 10 -D 'brightnessctl set 30% && systemctl suspend' -w 20 -W 'warning: 20%' -c 15 -C 'critical level: 15%'"
 
 screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png" /* SCREENSHOTS PATH */
 
@@ -109,7 +110,7 @@ binds {
     Alt+C      hotkey-overlay-title="Choose wallpaper"   { spawn-sh "GTK_THEME=Adwaita:dark waypaper"; }
     Alt+B      hotkey-overlay-title="Remove wallpaper"   { spawn-sh "swww clear";}
     Alt+Space  hotkey-overlay-title="Run hotspote"       { spawn "fuzzel"; }
-    Alt+Q      hotkey-overlay-title="Lock the Screen"    { spawn-sh "~/.config/niri/scripts/swaylock"; }
+    Alt+Q      hotkey-overlay-title="Lock the Screen"    { spawn-sh "~/.config/niri/swaylock"; }
 
     // F-keys
     F1 hotkey-overlay-title="No sound"        allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"; }
