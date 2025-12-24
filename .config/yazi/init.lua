@@ -17,7 +17,7 @@ require("bunny"):setup({
     { key = "c", path = "~/.config", desc = "Config" },
     { key = "r", path = "~/programming", desc = "Programming" },
   },
-}
+})
 
 -- TELEGRAM
 require("telegram-send"):setup({
