@@ -8,11 +8,16 @@ require("full-border"):setup {
 require("bunny"):setup({
   hops = {
     { key = "~", path = "~", desc = "Home" },
+    { key = "h", path = "~", desc = "Home" },
+
     { key = "p", path = "~/Pictures", desc = "Pictures" },
+    { key = "s", path = "~/Pictures/Screenshots", desc = "Screenshots" },
+    { key = "w", path = "~/Pictures/wallpapers", desc = "Wallpapers" },
+
     { key = "c", path = "~/.config", desc = "Config" },
     { key = "r", path = "~/programming", desc = "Programming" },
   },
-})
+}
 
 -- TELEGRAM
 require("telegram-send"):setup({
