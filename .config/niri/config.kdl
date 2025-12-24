@@ -107,7 +107,7 @@ binds {
     Mod+I      hotkey-overlay-title="Open Perplexity"    { spawn-sh "firefox https://www.perplexity.ai/"; }
     Mod+G      hotkey-overlay-title="Open Github"        { spawn-sh "firefox https://www.github.com/"; }
     Alt+N      hotkey-overlay-title="Change wallpaper"   { spawn-sh "waypaper --wallpaper ~/Pictures/wallpapers --random"; }
-    Alt+C      hotkey-overlay-title="Choose wallpaper"   { spawn-sh "GTK_THEME=Adwaita:dark waypaper"; }
+    Alt+W      hotkey-overlay-title="Choose wallpaper"   { spawn-sh "GTK_THEME=Adwaita:dark waypaper"; }
     Alt+B      hotkey-overlay-title="Remove wallpaper"   { spawn-sh "swww clear";}
     Alt+Space  hotkey-overlay-title="Run hotspote"       { spawn "fuzzel"; }
     Alt+Q      hotkey-overlay-title="Lock the Screen"    { spawn-sh "~/.config/niri/swaylock"; }
