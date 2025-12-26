@@ -4,6 +4,12 @@ on  = [ "e" ]
 run = "shell 'nvim .' --block"
 desc = "Open Neovim"
 
+# cc KEYBINDING
+[[mgr.prepend_keymap]]
+on = [ "c", "c" ]
+run = "cat '$1' | wl-copy"
+desc = "Copy file content"
+
 # d KEYBINDINGS
 [[mgr.prepend_keymap]]
 on  = [ "d", "d" ]

@@ -3,7 +3,7 @@ niri ( + wayland, swww, waypaper, swaylock, batsignal )
 quickshell
 fuzzel  
 foot  
-yazi( + telegram-send, imagemagick )  
+yazi( + telegram-send, imagemagick, wl-clipboard )  
 nvim  
 zsh ( + ohmyzsh, fzf )  
   
