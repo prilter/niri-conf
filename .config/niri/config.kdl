@@ -72,6 +72,7 @@ layout {
 /* AUTOSTART */
 spawn-at-startup "quickshell"
 spawn-at-startup "swww-daemon"
+spawn-at-startup "gammastep"
 spawn-at-startup "batsignal -d 10 -D 'brightnessctl set 30% && systemctl suspend' -w 20 -W 'warning: 20%' -c 15 -C 'critical level: 15%'"
 
 screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png" /* SCREENSHOTS PATH */
