@@ -13,17 +13,10 @@ input {
     }
 
     touchpad {
-        // off
         tap
-        // dwt
-        // dwtp
-        // drag false
-        // drag-lock
+        dwt /* DISABLE THE TOUCHPAD WHILE TYPING ON THE KEYBOARD */
+        drag-lock /* DISABLE HOLDING WHILE MOVING SOME FILE */
         natural-scroll
-        // accel-speed 0.2
-        // accel-profile "flat"
-        // scroll-method "two-finger"
-        // disabled-on-external-mouse
     }
 }
 
@@ -72,6 +65,7 @@ layout {
 /* AUTOSTART */
 spawn-at-startup "quickshell"
 spawn-at-startup "swww-daemon"
+spawn-at-startup "dunst"
 spawn-at-startup "gammastep"
 spawn-at-startup "batsignal -d 10 -D 'brightnessctl set 30% && systemctl suspend' -w 20 -W 'warning: 20%' -c 15 -C 'critical level: 15%'"
 
@@ -191,25 +185,4 @@ binds {
     Alt+Print { screenshot-window; }
 
     Mod+Shift+M { quit; } /* QUIT NIRI */
-    Mod+Shift+P { power-off-monitors; } /* BE CAREFUL!!! */
 }
-
- /* MONITORS !!! 
-    Mod+Shift+Left  { focus-monitor-left; }
-    Mod+Shift+Down  { focus-monitor-down; }
-    Mod+Shift+Up    { focus-monitor-up; }
-    Mod+Shift+Right { focus-monitor-right; }
-    Mod+Shift+H     { focus-monitor-left; }
-    Mod+Shift+J     { focus-monitor-down; }
-    Mod+Shift+K     { focus-monitor-up; }
-    Mod+Shift+L     { focus-monitor-right; }
-
-    Mod+Shift+Ctrl+Left  { move-column-to-monitor-left; }
-    Mod+Shift+Ctrl+Down  { move-column-to-monitor-down; }
-    Mod+Shift+Ctrl+Up    { move-column-to-monitor-up; }
-    Mod+Shift+Ctrl+Right { move-column-to-monitor-right; }
-    Mod+Shift+Ctrl+H     { move-column-to-monitor-left; }
-    Mod+Shift+Ctrl+J     { move-column-to-monitor-down; }
-    Mod+Shift+Ctrl+K     { move-column-to-monitor-up; }
-    Mod+Shift+Ctrl+L     { move-column-to-monitor-right; }
-    */
