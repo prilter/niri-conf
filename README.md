@@ -1,5 +1,6 @@
 # Requirements  
-niri ( + wayland, swww, dunst, gammastep, waypaper, swaylock, batsignal )  
+niri ( + wayland, swww, dunst, waypaper, swaylock, batsignal )  
+gammastep( + geoclue2 )
 quickshell
 fuzzel  
 foot  
