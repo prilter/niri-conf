@@ -4,7 +4,6 @@ import QtQuick
 Text {
   id: batteryText
   text: "BAT: --%"
-  color: "#cdd6f4"
   font.pixelSize: 13
   font.family: "Ubuntu Mono"  // for icons
 
@@ -34,7 +33,7 @@ Text {
     if (capacity <= 10) return "#ff0000"  // dangerous color 
     if (capacity <= 15) return "#f38ba8"  // critical color 
     if (capacity <= 20) return "#fab387"  // warning  color
-    return "#c2d39f"  // default color
+    return "#cca53e"  // default color
   }
 
   Process {

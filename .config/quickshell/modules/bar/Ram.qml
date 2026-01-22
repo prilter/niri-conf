@@ -4,7 +4,7 @@ import QtQuick
 Text {
     id: ramText
     text: "RAM: --%"
-    color: "#c2d39f"
+    color: "#cca53e"
     font.pixelSize: 13
     font.family: "Ubuntu Mono"
     
@@ -20,7 +20,7 @@ Text {
     }
     
     function getRamColor() {
-        if (percent < 80) return "#c2d39f"  // NORMAL
+        if (percent < 80) return "#cca53e"  // NORMAL
         return "#ff0000"                    // CRITICAL
     }
     

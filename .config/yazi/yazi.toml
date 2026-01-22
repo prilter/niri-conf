@@ -2,6 +2,7 @@
 [opener]
 img_view   = [ { run = 'imv "$@"',    orphan = true, for = "unix" } ] # OPEN IMAGES
 video_view = [ { run = 'mpv "$@"',    orphan = true, for = "unix" } ] # OPEN VIDEOS
+edit       = [ { run = 'nvim "$@"', block = true, for = "unix" } ]
 
 [open]
 prepend_rules = [

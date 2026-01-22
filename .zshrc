@@ -1,8 +1,6 @@
 export ZSH="$HOME/.oh-my-zsh"
 export LS_COLORS="di=38;2;224;181;68"
-# export PATH=$(go env GOPATH)/bin:$PATH # (Optional)
 ZSH_THEME="nicoulaj" # arrow bureau cypher fino-time gnzh half-life jnrowe linuxonly nicoulaj kardan
-alias nv='nvim'
 alias e='nvim'
 alias rm='rm -rf'
 

@@ -4,7 +4,7 @@ import QtQuick
 Text {
     id: wifiText
     text: getWifiText()
-    color: "#c2d39f"
+    color: "#cca53e"
     font.pixelSize: 13
     font.family: "Ubuntu Mono"
 

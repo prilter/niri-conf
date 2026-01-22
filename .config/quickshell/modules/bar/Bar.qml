@@ -3,8 +3,6 @@ import Quickshell.Wayland
 import QtQuick
 import QtQuick.Layouts
 
-import "elements"
-
 PanelWindow {
     id: bar
     anchors {
@@ -40,7 +38,7 @@ PanelWindow {
             Volume {}
             Text { 
               text: "|" 
-              color: "#c2d39f"
+              color: "#cca53e"
             }
             Bat {}
           }

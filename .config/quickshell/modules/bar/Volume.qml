@@ -4,7 +4,6 @@ import QtQuick
 Text {
     id: volumeText
     text: "󰖁"
-    color: "#f5c2e7"
     font.pixelSize: 13
     font.family: "Ubuntu Mono"
     
@@ -34,7 +33,7 @@ Text {
     function getVolumeColor() {
         if (muted || volume === 0) return "#585b70"  // MUTED
         if (volume > 100)          return "#ff0000"  // CRITICAL VOLUME
-        return "#c2d39f"
+        return "#cca53e"
     }
     
     Process {
