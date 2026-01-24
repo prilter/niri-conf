@@ -1,11 +1,9 @@
 # Requirements  
 niri ( + wayland, swww, dunst, waypaper, swaylock, batsignal )  
-quickshell
-fuzzel  
-foot  
+quickshell, fuzzel  
+foot, nvim, zsh ( + ohmyzsh, fzf )  
 yazi( + telegram-send, imagemagick, wl-clipboard )  
-nvim  
-zsh ( + ohmyzsh, fzf )  
+zen-browser
   
 # Installation  
 1) Copy repository:
